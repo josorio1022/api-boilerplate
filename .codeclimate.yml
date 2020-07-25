@@ -1,0 +1,10 @@
+version: 2
+plugins:
+  eslint:
+    enabled: true
+    config: .eslintrc.js
+  nodesecurity:
+    enabled: true
+exclude_patterns:
+  - "src/config/"
+  - "node_modules/"

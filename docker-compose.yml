@@ -1,0 +1,14 @@
+version: "3.2"
+
+services:
+  api:
+    build:
+      context: .
+    volumes:
+      - .:/usr/src/app
+      - node_modules:/usr/src/app/node_modules
+    command: ["yarn", "start:dev"]
+    ports:
+      - "3000:3000"
+volumes:
+  node_modules:
